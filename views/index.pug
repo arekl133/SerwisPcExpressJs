@@ -1,5 +1,51 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container_start
+    header
+      .header_info
+        .hedaer_info_img
+          img(src="images/Pik.png")
+        .header_info2
+          h1 Serwis PC
+          p Oferuję serwis oraz naprawę komputerów stacjonarnych i laptopów
+          p Wymiana ekranu dotykowego w smartfonie
+          p Darmowa diagnoza
+      .logo
+        img(src='images/pc.png')
+        .box_buttons
+          button Promocje
+          button Inne usługi
+    main
+      section.box1
+        .box
+          img(src='images/pcet.png')
+          p Serwis naprawa komputerów stacjonarnych
+        .box
+          img(src='images/laptop.png')
+          p Serwis i naprawa laptopów
+        .box
+          img(src='images/pc.png')
+          p Czyszczenie z kurzu i innych zanieczysczen
+        .box
+          img(src='images/Pik.png')
+          p Usównaie wirusów, przyspieszenie sprzetu
+      section.box2
+        .box
+          <i class="far fa-lightbulb"></i>
+          p Proponuje łatwe i niezawodne rozwiązania.
+        .box
+          <i class="fas fa-tools"></i>
+          p Profesjonalne podejście i szybkość działania.
+        .box
+          <i class="fas fa-cogs"></i>
+          p Zadbamy o sprawności działania twojego sprzętu.
+        .box
+          <i class="fas fa-laptop-code"></i>
+          p Staramy zadowolić każdego klienta a zarazem działać szybko i sprawnie.
+
+
+
+
+
+
