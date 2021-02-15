@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .form_container
+    form(method="post" action="kontakt/send")
+      label Name
+        input(type="text", name="name", placeholder="Enter Name")
+
+      label Email
+        input(type="text", name="email", placeholder="Enter Email")
+    
+      label Message
+        textarea(name="message" , placeholder="Enter Message")
+      button(type="submit") Submit

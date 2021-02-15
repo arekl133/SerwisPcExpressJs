@@ -1,0 +1,19 @@
+extends layout
+
+block content 
+  
+  .service
+      table
+        thead
+          tr
+            th Serwis:
+            th Cena:
+        tbody
+        each pliks, i in plik
+          tr
+            th #{pliks.nazwa}
+            td #{pliks.cena + " zł"}
+  
+  
+  
+  

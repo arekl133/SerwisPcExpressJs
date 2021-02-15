@@ -1,0 +1,26 @@
+[
+    {
+        "nazwa":"Wgrywanie systemu",
+        "cena":"100"
+    },
+    {
+        "nazwa":"Usuwanie wirusów",
+        "cena":"30"
+    },
+    {
+        "nazwa":"Wymiana podzespołów",
+        "cena":"50"
+    },
+    {
+        "nazwa":"Odzyskiwanie danych",
+        "cena":"50"
+    },
+    {
+        "nazwa":"Ogólne czyszczenie",
+        "cena":"20"
+    },
+    {
+        "nazwa":"Diagnoza",
+        "cena":"0"
+    }
+]
