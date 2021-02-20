@@ -10,6 +10,13 @@ var kontaktRouter = require('./routes/kontakt');
 var opinieRouter = require('./routes/opinie');
 var uslugi_cennikRouter = require('./routes/uslugi_cennik');
 
+var db = require('./db');
+const { ObjectId } = require('mongodb');
+db.connect();
+
+
+
+
 var app = express();
 
 // view engine setup
@@ -22,16 +29,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(function(req, res, next) {
+  req.db = db.client;
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/kontakt', kontaktRouter);
 app.use('/opinie', opinieRouter);
 app.use('/uslugi_cennik', uslugi_cennikRouter);
 
+
+
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
 
 // error handler
 app.use(function(err, req, res, next) {

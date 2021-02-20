@@ -1,4 +1,35 @@
 extends layout
 
 block content
-  h #{title}
+  
+
+
+  form(action="/opinie" method="post")
+    label Name
+      input(type="text" name="text" placeholder="Imie...")
+
+    label Wiadomosc
+      textarea(name="message" placeholder="Wiadomosc...")
+    
+    button(type="submit") Dodaj
+
+  //- table
+  //- each op, i in opy
+  //-   tr#op   
+  //-     td #{op.text}
+      
+     
+  //- table
+  //-   thead
+  //-      tr
+  //-        th Serwis:
+  //-        th Cena:
+  //-   tbody
+  //-    each op, i in op
+  //-      tr
+  //-        th #{op.text}
+  //-        td #{op.message}    
+      
+    
+//- each todo, i in todos
+//-   h1 #{todo}    
